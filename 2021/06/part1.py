@@ -9,7 +9,6 @@ def simulate(data_, days):
 	data = data_.copy()
 	for i in range(days):
 		n = len(data)
-		print(i,n)
 		for j in range(n):
 			if data[j]>0:
 				data[j]-=1

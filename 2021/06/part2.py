@@ -6,7 +6,6 @@ def simulate(data_, days):
 	data = data_.copy()
 	counts = [ data.count(i) for i in range(9) ]
 	for i in range(days):
-		print(i)
 		temp = counts.pop(0)
 		counts.append(temp)
 		counts[6]+=temp
