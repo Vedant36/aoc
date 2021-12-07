@@ -9,9 +9,10 @@ def filter_data():
 
 def main():
 	data = filter_data()
-	qwe = [np.abs(data-i).sum() for i in range(data.min(), data.max()+1)]
+	qwe = np.asarray([(np.abs(data-i)*(np.abs(data-i)+1)/2).sum() for i in range(data.min(), data.max()+1)])
 	return min(qwe)
 
 if __name__ == '__main__':
 	print(main())
+
 
