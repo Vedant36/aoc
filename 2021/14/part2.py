@@ -3,7 +3,7 @@
 from part1 import *
 
 def main():
-	pass
+	data = filter_data()
 
 if __name__ == '__main__':
 	print(main())
