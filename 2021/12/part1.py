@@ -45,9 +45,7 @@ class Graph:
 def main():
 	data = filter_data()
 	graph = Graph(data)
-	print(graph.uniq)
-	return graph.count()
+	return len(graph.count())
 
 if __name__ == '__main__':
-	paths = main()
-	print(len(paths))
+	print(main())
