@@ -1,5 +1,6 @@
       --------Part 1--------   --------Part 2--------
 Day       Time   Rank  Score       Time   Rank  Score    Late_By
+ 16   11:22:51  13629      0   13:19:12  13434      0    Unknown
  15   10:10:30  17742      0   10:30:00  13951      0    Unknown
  14   00:44:37   6900      0   02:01:48   5810      0   00:13:47
  13   06:28:30  19350      0   06:36:04  18302      0   06:15:11
@@ -18,4 +19,12 @@ Day       Time   Rank  Score       Time   Rank  Score    Late_By
 
 Note: The Late_By field is the time after the start of the competition I
 started trying the puzzle. It is for my own reference only
+
 Note for Day 15: Didn't work on first try so learnt dijkstra's and then came back
+Note for Day 16: first implementation didn't work, but second one worked for
+part 1. didn't work for part 2 because i forgot to remove the one bit prefixes
+for the 5 bit groups with ID 4. took me about 2 hours to debug that by checking
+against the manually grouped input(yes at one point before reimplementing, i
+gave up and started manually arranging the binary version of the input. i didn't
+even reach a third of the length in half an hour, and it wouldve been as good as
+useless for part 2)
